@@ -1,7 +1,7 @@
 ### Homework - sql-challenge
 ##### Student: Matheus Gratz [![GitHub](images/social_icons/gthb.png)](https://github.com/matheusgratz/)  [![Linkedin](images/social_icons/lkdin.png)](https://www.linkedin.com/in/matheusgratz/) [![Twiter](images/social_icons/twtr.png)](https://twitter.com/matheusgratz)  
 ---
-Table of contents
+Table of contents <a name="toc"></a>
 1. [ERD](#erd)
 2. [postgreSQL Statements](#post_stats)
 3. [Import CSVs](#import_csv)
@@ -15,6 +15,8 @@ Table of contents
 ---
 
 ### ERD <a name="erd"></a>
+<sub><sup>[Go back to the table of contents](#toc)</sup></sub>
+
 - Use http://www.quickdatabasediagrams.com to define the ERD of tables
 ![ERD](images/ERD/QuickDBD-Exercise.png)
 
@@ -59,6 +61,8 @@ salary MONEY
 ~~~
 ---
 ### postgreSQL Statements <a name="post_stats"></a>
+<sub><sup>[Go back to the table of contents](#toc)</sup></sub>
+
 With that, export the SQL statement in postgreSQL format and import to query editor to create tables and stablish relationships. The code is:
 ~~~sql
 DROP TABLE IF EXISTS dept_emp;
@@ -138,6 +142,8 @@ REFERENCES "employees" ("emp_no");
 ~~~
 ---
 ### Import CSVs to tables <a name="import_csv"></a>
+<sub><sup>[Go back to the table of contents](#toc)</sub></sup>
+
 For that, I ran a statement for each table to check if everything is ok.
 
 1. departments
@@ -178,6 +184,8 @@ SELECT * FROM titles LIMIT(5);
 
 ---
 ### Tasks <a name="tasks"></a>
+<sub><sup>[Go back to the table of contents](#toc)</sup></sub>
+
 1. List the following details of each employee: employee number, last name, first name, sex, and salary.
 
 2. List first name, last name, and hire date for employees who were hired in 1986.
