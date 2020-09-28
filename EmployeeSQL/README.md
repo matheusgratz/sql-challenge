@@ -333,8 +333,15 @@ a) Using bins, pd.cut, etc.
 b) Using pd.plot.hist
 ![method1](images/plots/histogram_method_2.png)
 
+Analysis: A lot of people has the same salary, around $40,000.00. It represents more than 1/3 of the people.
+
 2. Create a bar chart of average salary by title.
 ![avg_salary](images/plots/avg_salary_per_title.png)
+
+Analysis: The top 3 salaries (average), by title are:
+	1. Senior Staff - $58,550.17
+	2. Staff - $58,465.38
+	3. Manager - $51,531.04
 
 ### Epilogue <a name="epilogue"></a>
 <sub><sup>[Go back to the table of contents](#toc)</sup></sub>
@@ -365,4 +372,4 @@ Output:
 |:-:	|	:-:		|	:-:			|:-:	|	:-:			|:-:              |
 |499942	| April		|    Foolsday	|F		|	\$40000.00	|Technique Leader |
 
-Analisys: Good Joke ;)
+Analysis: Good Joke ;)
