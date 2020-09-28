@@ -13,6 +13,7 @@ Table of contents <a name="toc"></a>
     * salary
 4. [Tasks](#tasks)
 5. [Bonus Round](#bonus)
+6. [Epilogue](#epilogue)
 ---
 
 ### ERD <a name="erd"></a>
@@ -320,4 +321,46 @@ ORDER BY "Number of Employees" DESC;
 ### Bonus Round <a name="bonus"></a>
 <sub><sup>[Go back to the table of contents](#toc)</sup></sub>
 
+1. Create a histogram to visualize the most common salary ranges for employees.
 
+I used two methods to create histograms.
+
+a) Using bins, pd.cut, etc.
+![method1](images/plots/histogram_method_1.png)
+
+b) Using pd.plot.hist
+![method1](images/plots/histogram_method_2.png)
+
+2. Create a bar chart of average salary by title.
+![avg_salary](images/plots/avg_salary_per_title.png)
+
+### Epilogue <a name="epilogue"></a>
+<sub><sup>[Go back to the table of contents](#toc)</sup></sub>
+
+Evidence in hand, you march into your boss's office and present the visualization. With a sly grin, your boss thanks you for your work. On your way out of the office, you hear the words, "Search your ID number." You look down at your badge to see that your employee ID number is 499942.
+
+~~~sql
+SELECT 
+	e.emp_no,
+	e.first_name,
+	e.last_name,
+	e.sex,
+	s.salary,
+	ti.title
+FROM employees AS e
+
+INNER JOIN salary AS s
+ON e.emp_no = s.emp_no
+
+INNER JOIN titles AS ti
+ON e.emp_title_id = ti.title_id
+
+WHERE e.emp_no = '499942';
+~~~
+Output:
+
+|emp_no	| first_name|	last_name	|sex	|	salary		|title            |
+|:-:	|	:-:		|	:-:			|:-:	|	:-:			|:-:              |
+|499942	| April		|    Foolsday	|F		|	\$40000.00	|Technique Leader |
+
+Analisys: Good Joke ;)
