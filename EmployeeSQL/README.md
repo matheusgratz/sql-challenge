@@ -321,6 +321,8 @@ ORDER BY "Number of Employees" DESC;
 ### Bonus Round <a name="bonus"></a>
 <sub><sup>[Go back to the table of contents](#toc)</sup></sub>
 
+Please, find the Jupyter Notebook [here.](https://github.com/matheusgratz/sql-challenge/blob/master/EmployeeSQL/employees.ipynb)
+
 1. Create a histogram to visualize the most common salary ranges for employees.
 
 I used two methods to create histograms.
