@@ -339,6 +339,7 @@ Analysis: A lot of people has the same salary, around $40,000.00. It represents 
 ![avg_salary](images/plots/avg_salary_per_title.png)
 
 Analysis: The top 3 salaries (average), by title are:
+
 	1. Senior Staff - $58,550.17
 	2. Staff - $58,465.38
 	3. Manager - $51,531.04
